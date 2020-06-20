@@ -1,0 +1,695 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+                                                                                /* Навигационное резиновое меню */
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #000000;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav__logo {
+  display: inline-block;
+  width: 53%;
+  padding: 23px 0px 21px 0px;
+}
+
+.nav__menu {
+  display: inline-block;
+  width: 46%;
+  padding: 29px 0 31px 0;
+  text-align: right;
+}
+
+.menu__link {
+  padding: 0 24px 0 24px;
+  font-size: 14px;
+  line-height: 11px;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.menu__link:first-child {
+  padding-left: 0;
+}
+
+.menu__link:last-child {
+  padding-right: 0;
+}
+
+.menu__link:hover {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ffffff;
+  text-shadow: 2px -3px 4px #ffffff;
+  opacity: 1;
+}
+
+                                                                                              /* Header */
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("./../img/header_bg.png") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("./../img/header_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.header__foreword {
+  display: inline-block;
+  width: 47%;
+  margin-right: 222px;
+}
+
+.foreword__logo {
+  padding-top: 110px;
+  margin-bottom: 33px;
+}
+
+.foreword__title h2 {
+  margin-bottom: 36px;
+  font-family: "Raleway";
+  font-size: 36px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.foreword__line {
+  width: 74px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.foreword__text p {
+  margin-bottom: 44px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.foreword__btn {
+  margin-bottom: 140px;
+}
+
+.btn--white {
+  padding: 14px 32px 14px 32px;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn--white:hover {
+  background: #ff8b38;
+  border-radius: 5px;
+}
+
+.header__form {
+  display: inline-block;
+  width: 32%;
+  margin: 139px 0 140px 0;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.form__title h2 {
+  padding: 18px 0px 15px 0px;
+  font-size: 20px;
+  color: #333333;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.form__title h2 strong {
+  color: #FF8B38;
+}
+
+.form__name,
+.form__email,
+.form__pass {
+  width: 75%;
+  margin: 0 44px 0 45px;
+  padding: 29px 0px 7px 0px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.form__name::-webkit-input-placeholder,
+.form__email::-webkit-input-placeholder,
+.form__pass::-webkit-input-placeholder {
+  padding: 11px 0px 9px 14px;
+  color: #BDBDBD;
+}
+
+.form__name:-ms-input-placeholder,
+.form__email:-ms-input-placeholder,
+.form__pass:-ms-input-placeholder {
+  padding: 11px 0px 9px 14px;
+  color: #BDBDBD;
+}
+
+.form__name::-ms-input-placeholder,
+.form__email::-ms-input-placeholder,
+.form__pass::-ms-input-placeholder {
+  padding: 11px 0px 9px 14px;
+  color: #BDBDBD;
+}
+
+.form__name::placeholder,
+.form__email::placeholder,
+.form__pass::placeholder {
+  padding: 11px 0px 9px 14px;
+  color: #BDBDBD;
+}
+
+.form__name {
+  margin-top: 5px;
+}
+
+.form__email {
+  margin-top: 12px;
+}
+
+.form__pass {
+  margin-top: 18px;
+  margin-bottom: 49px;
+}
+
+.btn--submit {
+  width: 100%;
+  padding: 21px 0px 20px 0px;
+  font-size: 15px;
+  color: #ffffff;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #FF8B38;
+}
+
+.btn--submit:hover {
+  color: #333333;
+  text-shadow: 2px -1px 3px #FFFFFF;
+}
+
+                                                                                  /* Социальные ссылки */
+.social__foreword {
+  display: inline-block;
+  width: 35%;
+  padding: 23px 0px 22px 0px;
+}
+
+.social__foreword--title {
+  padding-bottom: 12px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.social__foreword--text {
+  font-size: 14px;
+  color: #86878B;
+}
+
+.social__icons {
+  display: inline-block;
+  margin-left: 87px;
+  padding: 30px 0px 30px 0px;
+}
+
+.icon__link {
+  margin: 0px 35px 0px 35px;
+  font-size: 48px;
+  color: #CCCCCC;
+}
+
+.icon__link:hover{
+    color: #333333;
+    text-shadow: 1px 1px 4px #3C3C3C;
+}
+
+.icon__link:first-child {
+  margin-left: 0;
+}
+
+.icon__link:last-child {
+  margin-right: 0;
+}
+
+                                                                            /* Раздел Features */
+
+.features {
+  padding-top: 148px;
+  padding-bottom: 114px;
+  background: #F5F5F5;
+}
+
+.features__tab {
+  display: inline-block;
+  padding-right: 101px;
+}
+
+.tab__item {
+  margin-bottom: 1px;
+  padding: 50px 36px 50px 36px;
+  border: none;
+  background: #293730;
+  font-size: 15px;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 2px #333333;
+          box-shadow: 0px 0px 2px #333333;
+}
+
+.item--one {
+  background: #FF8B38;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.item--three {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.features__foreword {
+  display: inline-block;
+  width: 50%;
+  padding-right: 103px;
+}
+
+.features__foreword--title h2 {
+  padding-bottom: 52px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.features__foreword--text {
+  padding-bottom: 31px;
+  font-size: 14px;
+  color: #86878B;
+}
+
+.features__foreword--text p {
+  padding-bottom: 20px;
+}
+
+.btn--yellow {
+  padding: 16px 25px 17px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #FF8B38;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px #333333;
+          box-shadow: 0px 0px 2px #333333;
+}
+
+.btn--yellow:hover {
+  background: #293730;
+  -webkit-box-shadow: 1px 1px 5px #FFFFFF;
+          box-shadow: 1px 1px 5px #FFFFFF;
+}
+
+.features__img {
+  display: inline-block;
+}
+
+                                                                                  /* Раздел Our Process */
+
+.process__foreword {
+  text-align: center;
+}
+
+.process__title h2 {
+  margin: 0;
+  padding-top: 106px;
+  padding-bottom: 30px;
+  font-family: 'Raleway';
+  font-size: 36px;
+  color: #212121;
+}
+
+.process__line {
+  width: 64px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-top: 2px solid #FF8B38;
+}
+
+.process__subtitle {
+  padding-bottom: 80px;
+  color: #86878B;
+  font-size: 14px;
+}
+
+.section__process {
+  padding-bottom: 102px;
+}
+
+.section__process--item {
+  display: inline-block;
+  width: 31%;
+  margin: 0 14px;
+  text-align: center;
+}
+
+.section__process--item:first-child {
+  margin-left: 0;
+}
+
+.section__process--item:last-child {
+  margin-right: 0;
+}
+
+.section__img {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  border: 2px solid #FF8B38;
+  border-radius: 50%;
+}
+
+.lamp {
+  background: url("./../img/lamp.svg") center center no-repeat;
+}
+
+.keyboard {
+  background: url("./../img/keyboard.svg") center 15px no-repeat;
+}
+
+.lightning {
+  background: url("./../img/lightning.svg") center center no-repeat;
+}
+
+.section__title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.section__paragraph p {
+  font-size: 14px;
+  color: #86878B;
+}
+
+                                                                                  /* Раздел Prising */
+
+.prising {
+  background: #F5F5F5;
+}
+
+.card {
+  display: inline-block;
+  width: 30.5%;
+  margin: 0 20px;
+  margin-bottom: 96px;
+  text-align: center;
+}
+
+.card:first-child {
+  margin-left: 0;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card__title {
+  padding: 21px 0;
+  font-size: 20px;
+  font-weight: 700;
+  background: #333333;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.card__price {
+  padding: 30px 0px 10px 0px;
+  background: #333333;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.card__price sub {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.card__price span {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.card__payment {
+  padding: 17px 0px 22px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #333333;
+  border-bottom: 5px solid #FF8B38;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card__list {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(134, 135, 139, 0.5);
+}
+
+.list__item {
+  margin-bottom: 1px;
+  background: #FFFFFF;
+  padding: 14px 0px 14px 0px;
+}
+
+.card__favorite {
+  padding: 13px 0px 15px 0px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: #FF8B38;
+}
+
+                                                                                  /* Раздел Reviews */
+
+.reviews__subtitle {
+  padding-bottom: 55px;
+}
+
+.reviews__section {
+  display: inline-block;
+  width: 33%;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 8px;
+}
+
+.reviews__section:first-child {
+  padding-left: 0;
+}
+
+.reviews__section:last-child {
+  padding-right: 0;
+}
+
+.reviews__section--item {
+  margin-bottom: 101px;
+}
+
+.review__comment {
+  padding: 24px 13px 41px 12px;
+  background: url("./../img/review.png") no-repeat;
+  background-size: contain;
+}
+
+.review__commentator {
+  width: 100%;
+}
+
+.commentator__img {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.commentator__info {
+  display: inline-block;
+}
+
+.commentator__name h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.commentator__profession h4 {
+  font-size: 14px;
+  color: #86878B;
+}
+
+                                                                                /* Раздел Custom */
+
+.custom {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./../img/custom_bg.png") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../img/custom_bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.custom__title h2 {
+  padding-top: 76px;
+  padding-bottom: 26px;
+  font-family: 'Raleway';
+  font-size: 36px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.custom__line {
+  width: 74px;
+  margin: 0 auto;
+  padding-bottom: 23px;
+  border-top: 2px solid #FFFFFF;
+}
+
+.cuctom__subtitle p {
+  padding-bottom: 33px;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(134, 135, 139, 0.9);
+}
+
+.foreword__btn--custom {
+  padding-bottom: 63px;
+}
+
+                                                                                  /* Раздел Contact Us */
+
+.contact__form {
+  padding-bottom: 80px;
+}
+
+.user__info {
+  display: inline-block;
+  width: 48%;
+  margin-bottom: 60px;
+}
+
+.user__info input {
+  width: 100%;
+  padding: 11px 0px 9px 13px;
+  border-bottom: 1px solid #BDBDBD;
+  margin: 10px 0;
+}
+
+.user__info input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.user__info input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.user__info input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.user__info input::placeholder {
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.user__message {
+  display: inline-block;
+  width: 45%;
+  margin-left: 40px;
+}
+
+.text {
+  width: 100%;
+  padding: 11px 0px 9px 13px;
+  border-bottom: 1px solid #BDBDBD;
+  margin-top: 20px;
+}
+
+.text::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.text:-ms-input-placeholder {
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.text::-ms-input-placeholder {
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.text::placeholder {
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.contact__btn {
+  width: 100%;
+  text-align: center;
+}
+
+                                                                                  /* Раздел Footer */
+
+.footer {
+  margin: 0;
+  padding: 0px 0px 15px 0px;
+  background: #000;
+  text-align: center;
+}
+
+.footer__icon {
+  width: 100%;
+  height: 100%;
+  padding-top: 38px;
+  padding-bottom: 15px;
+}
+
+.footer__social--icon > i {
+  padding: 0 5px;
+  color: #CCCCCC;
+  font-size: 24px;
+}
+
+.footer__social--icon > i:hover {
+  color: aqua;
+  text-shadow: 1px 1px 4px #FFFFFF;
+}
+
+.footer__copywrite span {
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
