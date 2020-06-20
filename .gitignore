@@ -1,5 +1,8 @@
+*.git
 *.vscode
 .editorconfig
 .gitattributes
 .gitignore
+*scss
+*.scss
 maket.psd
